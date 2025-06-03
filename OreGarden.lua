@@ -303,11 +303,18 @@ spawn(function()
             ) / 10
                 
             if (dialoguePosition ~= 0) then
+                local sell = false
+
                 for _, item in next, localPlayer.Backpack:GetChildren() do
                     if (item:GetAttribute("weight")) then
-                        remotes.AnswerDialog:FireServer("butch1", 2)
-                        remotes.AnswerDialog:FireServer("butch4", 0)
+                        sell = true
+                        break
                     end
+                end
+
+                if (sell) then
+                    remotes.AnswerDialog:FireServer("butch1", 2)
+                    remotes.AnswerDialog:FireServer("butch4", 0)
                 end
             end
         end
