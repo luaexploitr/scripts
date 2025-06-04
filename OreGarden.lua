@@ -20,15 +20,15 @@ local remotes = replicatedStorage.Remotes
 local playerPlot = require(replicatedStorage.Source.Shared.PlotHandler).GetPlot(localPlayer)
 
 local orePurchasePriority = {
-    { name = "Obsidian", price = 1000000, id = 11 },
-    { name = "Diamond", price = 350000, id = 10 },
+    { name = "Diamond", price = 350000, id = 11 },
+    { name = "Obsidian", price = 100000, id = 10 },
     { name = "Emerald", price = 100000, id = 9 },
     { name = "Ruby", price = 20000, id = 8 },
     { name = "RoseQuartz", price = 3500, id = 7 },
     { name = "Lapis", price = 650, id = 6 },
     { name = "Gold", price = 400, id = 5 },
     { name = "Sapphire", price = 300, id = 4 },
-    { name = "Iron", price = 125, id = 3 },
+    { name = "Iron", price = 50, id = 3 },
     { name = "Quartz", price = 45, id = 2 },
     { name = "Coal", price = 5, id = 1 },
 }
